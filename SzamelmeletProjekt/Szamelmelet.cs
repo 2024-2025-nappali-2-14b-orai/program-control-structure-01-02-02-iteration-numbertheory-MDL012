@@ -38,7 +38,7 @@ public static class Szamelmelet
         return osztok;
     }
 
-    public static string KiLista(List<int> list)
+    public static string ListaToString(List<int> list)
     {
         return string.Join(", ", list);
     }
@@ -67,7 +67,7 @@ public static class Szamelmelet
     public static List<int> GetPrimszamokHatarig(int veg)
     {
         // Prímszámok adott határig
-        return new List<int>();
+        return GetPrimszamok(2,veg);
     }
     public static int GetOsztokOsszege()
     { return 0; }
